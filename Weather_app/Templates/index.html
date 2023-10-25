@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: black;
+            text-shadow: 1px 1px 1px #ccc; /* Adding a subtle 3D effect */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-shadow: 1px 1px 1px #000; /* Adding a subtle 3D effect */
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Weather App</h1>
+
+        <div class="form">
+            <form action="/weatherapp" method="POST">
+                <label for="city">Enter City:</label>
+                <input type="text" name="city" id="city" required autocomplete="new-password">
+
+                <label for="units">Enter Units:</label>
+                <input type="text" name="units" id="units" required autocomplete="new-password">
+
+                <label for="appid">Enter Your API KEY:</label>
+                <input type="text" name="appid" id="appid" required autocomplete="new-password">
+
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
